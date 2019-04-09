@@ -44,7 +44,7 @@ module OmniAuth
           email: request.params['email'],
           username: request.params['username'],
           is_member: request.params['is_member'],
-          access_code: request.params['access_code']
+          access_codes: request.params['access_codes'].split(',,')
         }
       end
 
